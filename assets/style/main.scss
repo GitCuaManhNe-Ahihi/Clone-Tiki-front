@@ -1,0 +1,23 @@
+@import url('base.scss');
+#header {
+  background-color: $bluetikicolor;
+  height: 8.4rem;
+  width: 100vw;
+}
+.loadpage
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: $bluetikicolor;
+    position: relative;
+    z-index: 100;
+}
+.cube{
+    height: 5rem;
+    width: 5rem;
+    background-color: $backgroundcolor;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
