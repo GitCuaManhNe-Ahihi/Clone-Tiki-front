@@ -24,7 +24,7 @@
           body.appendChild(loadpage);
          await setTimeout(function(){
           body.removeChild(loadpage);
-          },5000);     
+          },1000);     
     }
       
-   window.addEventListener("load",load);
+//   window.addEventListener("load",load);

@@ -1,23 +1,245 @@
-@import url('base.scss');
+@import "base.scss";
 #header {
   background-color: $bluetikicolor;
-  height: 8.4rem;
+  height: 10rem;
   width: 100vw;
+  user-select: none;
+  .header__content {
+    width: 1240px;
+    margin: auto;
+    height: 100%;
+    .header__content-above {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 6.6rem;
+      padding: 1.8rem 0 0.8rem;
+
+      .logo-tiki {
+        height: 4rem;
+        width: 6rem;
+        background: url(../images/tikilogo.png) no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+      }
+      .header__search-area {
+        width: 746px;
+        height: 4rem;
+        align-items: center;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+
+        form {
+          width: 746px;
+          display: flex;
+          input {
+            width: 626px;
+            height: 4rem;
+            border: none;
+            padding: 0 1.2rem;
+            font-size: 1.5rem;
+            &:focus {
+              outline: none;
+            }
+            &::placeholder {
+              color: #b2b2b2;
+              font-size: 1.5rem;
+            }
+          }
+          button {
+            flex: 1;
+            width: 120px;
+            height: 4rem;
+            display: inline-block;
+            border: none;
+            background-color: #0d5cb6;
+            color: #fff;
+            font-size: 1.7rem;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+      .user-info {
+        width: 127px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        margin: 0 2rem;
+        cursor: pointer;
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 20px;
+          position: absolute;
+          left: 50%;
+          bottom: -20px;
+          transform: translate(-50%);
+          background-color: transparent;
+        }
+      
+        .avatar {
+          font-size: 3.4rem;
+          color: #fff;
+          margin-right: 1rem;
+        }
+        .user-info__name {
+          flex: 1;
+          a,
+          span {
+            display: block;
+            font-size: 1.1rem;
+            color: #fff;
+            text-decoration: none;
+          }
+          a {
+            font-size: 1.3rem;
+          }
+        }
+        .user-infor__dropDown {
+          position: absolute;
+          top: 50px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #fff;
+          height: 40rem;
+          width: 268px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 10px 2px;
+          display: none;
+          &::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #fff;
+          }
+          a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.4rem;
+            display: block;
+            &:hover {
+              background: #b2b2b256;
+            }
+          }
+          .user-infor__dropDown-Item {
+            padding: 0.6rem 2rem;
+            span {
+              display: inline-block;
+              padding: 0.1rem 0.5rem;
+              background: red;
+              color: #fff;
+              border-radius: 3rem;
+              font-size: 1rem;
+            }
+          }
+          .user-infor__dropDown-ItemIcon {
+            padding: 0.8rem 2rem;
+            img {
+              min-width: 3rem;
+              height: 2.5rem;
+            }
+            display: flex;
+            justify-items: left;
+            align-items: center;
+            .content {
+              margin-left: 1rem;
+              flex: 1;
+              span {
+                display: block;
+                width: 100%;
+                &:first-child {
+                  display: inline;
+                }
+              }
+            }
+          }
+         
+        }
+        
+      }
+      .item-cart-inner {
+        height: 100%;
+        cursor: pointer;
+        .cart {
+          font-size: 3.4rem;
+          color: #fff;
+          margin-right: 1rem;
+          position: relative;
+          span {
+            position: absolute;
+            top: -0.6rem;
+            right: -0.5rem;
+            font-size: 1.3rem;
+            color: #fff;
+            background: orange;
+            display: inline-block;
+            padding: 0.3rem 0.6rem;
+            border-radius: 50%;
+            border: 1px solid $bluetikicolor;
+          }
+        }
+        span {
+          font-size: 1.3rem;
+          color: #fff;
+        }
+      }
+    }
+    .header__content-below {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 4.4rem;
+      .below__container-left {
+        display: flex;
+        img {
+          width: 9.4rem;
+          height: 1.2rem;
+        }
+        ul {
+          margin-left: 15.9rem;
+          list-style: none;
+          li {
+            display: inline-block;
+            a {
+              font-size: 1.1rem;
+              color: #fff;
+              text-decoration: none;
+              cursor: pointer;
+              display: inline-block;
+              margin-right: 1rem;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+      .below__container-right {
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: #fff;
+        padding: 0.2rem 0.5rem;
+        background: #51adff;
+        border-radius: 10rem;
+      }
+    }
+  }
 }
-.loadpage
-{
-    height: 100vh;
-    width: 100vw;
-    background-color: $bluetikicolor;
-    position: relative;
-    z-index: 100;
+
+.user-info:hover {
+  .user-infor__dropDown  {
+    display: block !important;
+  }
 }
-.cube{
-    height: 5rem;
-    width: 5rem;
-    background-color: $backgroundcolor;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+// key-word-trend
+//
+// header__content-below
+// below__container-left
+// below__container-right
