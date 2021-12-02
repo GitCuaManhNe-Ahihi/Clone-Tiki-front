@@ -1,124 +1,378 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/style/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
- 
-  <body>
-      
-    <div id='header'>
-            <div class="header__content">
-              <div class="header__content-above">
-                <div class="logo-tiki">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/style/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+</head>
+
+<body>
+
+  <div id='header'>
+    <div class="header__content">
+      <div class="header__content-above">
+        <div class="logo-tiki">
+        </div>
+        <div class="header__search-area">
+          <form action="">
+            <div class="search-form">
+              <input type="search" autocomplete="off" name="" id="inputsearch"
+                placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn...">
+              <div class="searchCompleteAuto">
+                <div class="item-promo">
+                  <a href="#">WIPRO - Mua 1 Tặng 1</a>
+                  <img
+                    src="https://salt.tikicdn.com/cache/140x28/ts/banner/76/6b/64/b6d27f692792b4481f4c14be40e6e347.png"
+                    alt="">
                 </div>
-                <div class="header__search-area">
-                  <form action="">
-                    <input type="search" name="" id="" placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn...">
-                    <button type="submit">
-                      <i class="fa fa-search"></i>
-                      <span>Tìm kiếm</span>
-                    </button>
-                  </form>
+                <div class="StyleSuggetstion">
+                  <a href="#" class="history-keyword-item">
+                    <img class='item-icon'
+                      src="https://salt.tikicdn.com/ts/upload/90/fa/09/9deed3e3186254637b5ca648f3032665.png" alt="">
+                    <div class="keyword">ff</div>
+                    <img src="https://salt.tikicdn.com/ts/upload/5c/a1/7e/cd8cde79e81844f2c394efdc415f5441.png" alt=""
+                      class="delete">
+                  </a>
+                  <a href="" class="suggestion-keyword-item">
+                    <img src="https://salt.tikicdn.com/ts/upload/e8/aa/26/42a11360f906c4e769a0ff144d04bfe1.png" alt=""
+                      class="item-icon">
+                    <div class="keyword">Tai nghe bluetooth</div>
+                  </a>
+                  <a href="" class="suggestion-keyword-item">
+                    <img src="https://salt.tikicdn.com/ts/upload/e8/aa/26/42a11360f906c4e769a0ff144d04bfe1.png" alt=""
+                      class="item-icon">
+                    <div class="keyword">iphone3</div>
+                  </a>
+                  <a href="#" class='show-more-suggest'>Xem thêm <i class="fa fa-caret-down" aria-hidden="true"></i></a>
                 </div>
-                <div class="user-info">
-                  <div class="avatar">
-                    <i class="fa fa-user-o" aria-hidden="true"></i>
-                  </div>
-                  <div class="user-info__name">
-                    <span>Tài Khoản</span>
-                    <span><a href="#">Nguyễn Văn A <i class="fa fa-caret-down" aria-hidden="true"></i></a></span>
-                     
-                </div>
-                <div class="user-infor__dropDown">
-                  <a href="#" class="user-infor__dropDown-Item">
-                    Đơn hàng của tôi
-                  </a>
-                  <a href="#" class="user-infor__dropDown-Item">
-                    Thông báo của tôi
-                    <span>2</span>
-                  </a>
-                  <a href="#" class="user-infor__dropDown-Item">
-                    Tài khoản của tôi
-                  </a>
-                  <a href="#" class="user-infor__dropDown-ItemIcon">
-                    <img src="assets/images/tikinow.png" alt=""> 
-                    <span class="content">
-                      <span>TikiNOW</span>
-                      <span>Thông tin gói hội viên</span>
-                    </span>
-                  </a>
-                  <a href="" class="user-infor__dropDown-ItemIcon">
-                    <img src="assets/images/coupon_code.svg" alt="">
-                    <span class="content">
-                      <span>Mã giảm giá</span>
-                      <span>bạn đang có <span class="total-coupon">3</span> mã giảm giá</span>
-                    </span>
-                  </a>
-                  <a href="" class="user-infor__dropDown-ItemIcon">
-                    <img src="assets/images/tikixu.svg" alt="">
-                    <span class="content">
-                      <span>Thông tin Tiki Xu</span>
-                      <span>bạn đang có <span class="total-coin">3</span>xu</span>
-                    </span>
-                  </a>
-                  <a href="" class="user-infor__dropDown-ItemIcon">
-                    <img src="assets/images/bookcare.svg" alt="">
-                    <span class="content">
-                      <span>Thông tin BookCare</span>
-                      <span>bạn đang có <span class="total-bookCare">2</span> BookCare</span>
-                    </span>
-                  </a>
-                  <a href="" class="user-infor__dropDown-Item">
-                    Đổi trả hàng dễ dàng
-                  </a>
-                  <a href="" class="user-infor__dropDown-Item">
-                    Thoát tài khoản
-                  </a>
-                </div>
-                </div>
-                <div class="item-cart-inner">
-                    <div class="cart fa fa-shopping-cart" aria-hidden="true">
-                      <span>3</span>
+                <div class="BottomWidgets">
+                  <div class="StyleHotKeyWords">
+                    <div class="wrapHotKeywords-heading">
+                      <img src="https://salt.tikicdn.com/ts/upload/4f/03/a0/2455cd7c0f3aef0c4fd58aa7ff93545a.png" alt=""
+                        class="trending">
+                      <span>Tìm kiếm phổ biến</span>
                     </div>
-                    <span>Giỏ Hàng</span>
-                </div>
-              </div>
-              <div class="header__content-below">
-                <div class="below__container-left">
-                  <img src="assets/images/freeship.png" alt="">
-            
-                <ul class="key-word-trend">
-                  <li><a href="#">tất cả thịt rau củ</a></li>
-                  <li><a href="#">thịt</a></li>
-                  <li><a href="#">hàng đông lạnh</a></li>
-                  <li><a href="#">trái cây</a></li>
-                  <li><a href="#">hải sản</a></li>
-                  <li><a href="#">gạo</a></li>
-                </ul>
-                </div>
-                <div class="below__container-right">
-                  <i class="fas fa-store"></i>
-                  <span>bán hàng cùng tiki</span>
-                </div>
-              </div>
+                    <div class="inner">
+                      <a href="" class="trending-item">
+                        <img
+                          src="https://salt.tikicdn.com/cache/280x280/ts/product/e7/79/d9/9fe7a706eabcd39d6d79aa7f95575332.png"
+                          class="thumb">
+                        <span class="title">lịch để bàn 2022</span>
+                      </a>
+                      <a href="" class="trending-item">
+                        <img
+                          src="https://salt.tikicdn.com/cache/280x280/ts/product/e1/32/8b/fca3b7c7764f84cbad5a1bb16caaf6dd.jpg"
+                          class="thumb">
+                        <span class="title">tẩy trang</span>
+                      </a>
+                      <a href="" class="trending-item">
+                        <img
+                          src="https://salt.tikicdn.com/cache/280x280/ts/product/40/5b/da/8fb3dfe89367fcd20ad82223df811d2d.jpg"
+                          class="thumb">
+                        <span class="title">áo thun unisex</span>
+                      </a>
+                      <a href="" class="trending-item">
+                        <img
+                          src="https://salt.tikicdn.com/cache/280x280/ts/product/5b/a7/8b/fe35e4bbcd96804747949beb08df82c9.jpg"
+                          class="thumb">
+                        <span class="title">cảm ứng nhiệt độ, độ ẩm</span>
+                      </a>
+                      <a href="" class="trending-item">
+                        <img
+                          src="https://salt.tikicdn.com/cache/280x280/ts/product/19/06/8d/e8b42b7c540b6dcb8dcbbd02e14a4dc8.jpg"
+                          class="thumb">
+                        <span class="title">kit adruno</span>
+                      </a>
+                      <a href="" class="trending-item">
+                        <img
+                          src="https://salt.tikicdn.com/cache/280x280/ts/product/23/c9/e2/a9b8def0df050d0f8d6d2c265df2d5ca.png"
+                          class="thumb">
+                        <span class="title">máy massage cổ vai gáy</span>
+                      </a>
+                    </div>
+                    <div class="StyleHotCategories">
+                      <span class="wrapHotCategories-heading">Danh mục nổi bật</span>
+                      <div class="inner">
+                        <a href="" class="item">
+                          <div class="thumb-wrap">
+                            <div class="thumb"><img
+                                src="https://salt.tikicdn.com/cache/280x280/ts/product/70/a5/17/4499a378a821f79703d9e28d7a1fa188.jpg">
+                            </div>
+                          </div>
+                          <span class="title">Aó thun ngắn tay và không có cổ</span>
+                        </a>
+                        <a href="" class="item">
+                          <div class="thumb-wrap">
+                            <div class="thumb"><img
+                                src="https://salt.tikicdn.com/cache/280x280/ts/product/92/2c/e2/7391c4aa1677fcf9fb71e4042d1187d8.jpg">
+                            </div>
+                          </div>
+                          <span class="title">máy đọc sách</span>
+                        </a>
+                        <a href="" class="item">
+                          <div class="thumb-wrap">
+                            <div class="thumb"><img
+                                src="https://salt.tikicdn.com/ts/category/54/c0/ff/fe98a4afa2d3e5142dc8096addc4e40b.png">
+                            </div>
+                          </div>
+                          <span class="title">Điện Thoại - Máy Tính Bảng</span>
+                        </a>
+                        <a href="" class="item">
+                          <div class="thumb-wrap">
+                            <div class="thumb"><img
+                                src="https://salt.tikicdn.com/cache/280x280/ts/product/86/ea/42/fcc009322433cf02be68745152a0b9ab.jpg">
+                            </div>
+                          </div>
+                          <span class="title">Tẩy trang</span>
+                        </a>
+                        <a href="" class="item">
+                          <div class="thumb-wrap">
+                            <div class="thumb"><img
+                                src="https://salt.tikicdn.com/ts/category/ed/20/60/afa9b3b474bf7ad70f10dd6443211d5f.png">
+                            </div>
+                          </div>
+                          <span class="title">Nhà sách tiki</span>
+                        </a> <a href="" class="item">
+                          <div class="thumb-wrap">
+                            <div class="thumb"><img
+                                src="https://salt.tikicdn.com/cache/280x280/ts/product/83/23/b7/14a42ae4f66c9b8b298aaef4b9671442.jpg">
+                            </div>
+                          </div>
+                          <span class="title">Sách tài chính, tiền tệ</span>
+                        </a> <a href="" class="item">
+                          <div class="thumb-wrap">
+                            <div class="thumb"><img
+                                src="https://salt.tikicdn.com/cache/280x280/ts/product/29/81/c2/e510cce7f267fd06f7d2dd6aea21a997.jpg">
+                            </div>
+                          </div>
+                          <span class="title">Aó hoodies nam vải nỉ</span>
+                        </a> <a href="" class="item">
+                          <div class="thumb-wrap">
+                            <div class="thumb"><img
+                                src="https://salt.tikicdn.com/cache/280x280/ts/product/19/06/8d/e8b42b7c540b6dcb8dcbbd02e14a4dc8.jpg">
+                            </div>
+                          </div>
+                          <span class="title">Máy tính nhúng - Kit phát triển</span>
+                        </a>
+                      </div>
+                    </div>
 
+                  </div>
+                </div>
+              </div>
             </div>
-     
+
+            <button type="submit">
+              <i class="fa fa-search"></i>
+              <span>Tìm kiếm</span>
+            </button>
+          </form>
+        </div>
+        <div class="user-info">
+          <div class="avatar">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+          </div>
+          <div class="user-info__name">
+            <span>Tài Khoản</span>
+            <span><a href="#">Nguyễn Văn A <i class="fa fa-caret-down" aria-hidden="true"></i></a></span>
+
+          </div>
+          <div class="user-infor__dropDown">
+            <a href="#" class="user-infor__dropDown-Item">
+              Đơn hàng của tôi
+            </a>
+            <a href="#" class="user-infor__dropDown-Item">
+              Thông báo của tôi
+              <span>2</span>
+            </a>
+            <a href="#" class="user-infor__dropDown-Item">
+              Tài khoản của tôi
+            </a>
+            <a href="#" class="user-infor__dropDown-ItemIcon">
+              <img src="assets/images/tikinow.png" alt="">
+              <span class="content">
+                <span>TikiNOW</span>
+                <span>Thông tin gói hội viên</span>
+              </span>
+            </a>
+            <a href="" class="user-infor__dropDown-ItemIcon">
+              <img src="assets/images/coupon_code.svg" alt="">
+              <span class="content">
+                <span>Mã giảm giá</span>
+                <span>bạn đang có <span class="total-coupon">3</span> mã giảm giá</span>
+              </span>
+            </a>
+            <a href="" class="user-infor__dropDown-ItemIcon">
+              <img src="assets/images/tikixu.svg" alt="">
+              <span class="content">
+                <span>Thông tin Tiki Xu</span>
+                <span>bạn đang có <span class="total-coin">3</span>xu</span>
+              </span>
+            </a>
+            <a href="" class="user-infor__dropDown-ItemIcon">
+              <img src="assets/images/bookcare.svg" alt="">
+              <span class="content">
+                <span>Thông tin BookCare</span>
+                <span>bạn đang có <span class="total-bookCare">2</span> BookCare</span>
+              </span>
+            </a>
+            <a href="" class="user-infor__dropDown-Item">
+              Đổi trả hàng dễ dàng
+            </a>
+            <a href="" class="user-infor__dropDown-Item">
+              Thoát tài khoản
+            </a>
+          </div>
+        </div>
+        <div class="item-cart-inner">
+          <div class="cart fa fa-shopping-cart" aria-hidden="true">
+            <span>3</span>
+          </div>
+          <span>Giỏ Hàng</span>
+        </div>
+      </div>
+      <div class="header__content-below">
+        <div class="below__container-left">
+          <img src="assets/images/freeship.png" alt="">
+
+          <ul class="key-word-trend">
+            <li><a href="#">tất cả thịt rau củ</a></li>
+            <li><a href="#">thịt</a></li>
+            <li><a href="#">hàng đông lạnh</a></li>
+            <li><a href="#">trái cây</a></li>
+            <li><a href="#">hải sản</a></li>
+            <li><a href="#">gạo</a></li>
+
+        </div>
+        <div class="below__container-right">
+          <i class="fas fa-store"></i>
+          <span>bán hàng cùng tiki</span>
+        </div>
       </div>
 
+    </div>
+
+  </div>
+  <div class="navigationBar">
+    <div class="container-button">
+      <span class="fa fa-chevron-left" aria-hidden="true"></span>
+      <span class="fa fa-chevron-right" aria-hidden="true"></span>
+    </div>
+    <div class="container-nav">
+      <ul class="navigationBar__items">
+        <li><a href="" class="item">Thịt, rau củ</a></li>
+        <li><a href="" class="item">Bách hóa</a></li>
+        <li><a href="" class="item">Nhà cửa</a></li>
+        <li><a href="" class="item">Thiết bị số</a></li>
+        <li><a href="" class="item">Điện thoại</a></li>
+        <li><a href="" class="item">Mẹ & bé</a></li>
+        <li><a href="" class="item">Làm đẹp</a></li>
+        <li><a href="" class="item">Gia dụng</a></li>
+        <li><a href="" class="item">Thời trang nữ</a></li>
+        <li><a href="" class="item">Thời trang nam</a></li>
+        <li><a href="" class="item">Gìay nữ</a></li>
+        <li><a href="" class="item">Túi nữ</a></li>
+        <li><a href="" class="item">Giày nam</a></li>
+        <li><a href="" class="item">Túi nam</a></li>
+        <li><a href="" class="item">Balo & Vali</a></li>
+        <li><a href="" class="item">Phụ kiện</a></li>
+        <li><a href="" class="item">Đồng hồ</a></li>
+        <li><a href="" class="item">Laptop</a></li>
+        <li><a href="" class="item">Quốc tế</a></li>
+        <li><a href="" class="item">Voucher</a></li>
+        <li><a href="" class="item">Xe</a></li>
+        <li><a href="" class="item">Sách</a></li>
+        <li><a href="" class="item">Điện tử</a></li>
+        <li><a href="" class="item">Thể thao</a></li>
+        <li><a href="" class="item">Máy ảnh</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <div class="section-slide">
+    <div class="MainSlide-baner">
+      <div class="swiper Myswiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img
+              src="https://salt.tikicdn.com/cache/w1080/ts/banner/2e/6b/77/6b80dcb0e91bb4079ddd237d331d9180.png.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://salt.tikicdn.com/cache/w1080/ts/banner/1b/f4/9d/b3cad95237c9cfac8a130d40a98f2ee2.png.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://salt.tikicdn.com/cache/w1080/ts/banner/1e/b2/a3/34b9e8693edd13562b11ea39b25027f6.png.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://salt.tikicdn.com/cache/w1080/ts/banner/48/b8/df/bf926c290a4565aaf2d77beee41b5388.png.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://salt.tikicdn.com/cache/w1080/ts/banner/89/b7/d7/912abc48b3a631b3f04ad02b14065b81.png.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://salt.tikicdn.com/cache/w1080/ts/banner/3d/ce/d3/c94a86eee5766821621e92ef4e8fac7d.png.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://salt.tikicdn.com/cache/w1080/ts/banner/53/50/65/0b15903a9d01d4decf7c54db00c747de.png.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://salt.tikicdn.com/cache/w1080/ts/banner/4b/ba/64/ba09d08f16fd7f0e5c74e1dd55e56f4b.png.webp"
+              alt=""></div>
+          <div class="swiper-slide"><img
+              src="https://salt.tikicdn.com/cache/w1080/ts/banner/b6/ef/fc/e458012a09d4eccb81398ec9b5dfc7b3.png.webp"
+              alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+        <div class="swiper-button-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+  
+      </div>
+      <div class="banner">
+        <img src="https://salt.tikicdn.com/cache/w400/ts/banner/9c/b5/20/cad4183f496d80cc40a9ba8261acd333.png.webp"
+          alt="">
+      </div>
+    </div>
+  </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/javascript/main.js"></script>
-  </body>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/javascript/main.js"></script>
+  <script type="module">
+  import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+    var swiper = new Swiper('.Myswiper', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      autoplay:{
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
 </html>
