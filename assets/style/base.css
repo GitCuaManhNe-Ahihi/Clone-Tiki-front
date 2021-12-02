@@ -9,6 +9,10 @@ html {
           text-size-adjust: 100%;
   -webkit-transition: all linear 0.75s;
   transition: all linear 0.75s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 * {
