@@ -40,7 +40,7 @@ let buttonbarleft = document.querySelector(".fa-chevron-left");
 let buttonbarright = document.querySelector(".fa-chevron-right");
 let navigationBaritems = document.querySelector(".navigationBar__items");
 
-
+navigationBaritems.style.transition = "all 0.5s ease-in-out";
 inputsearch.addEventListener('focus', () => {
     searchCompleteAuto.style.display = "block";
     overlay = document.createElement("DIV");
@@ -94,16 +94,7 @@ buttonbarleft.addEventListener('click',async (e) => {
     e.stopPropagation();
     if(Item[0].getBoundingClientRect().x<0){
         buttonbarleft.style.display = "none";
-        let i=-970
-        let settime2 =  await setInterval(() => {
-            i+=50
-            navigationBaritems.style.left = `${i}px`;
-            if(i>0)
-            {
-                navigationBaritems.style.left = `${0}px`;
-                clearInterval(settime2);
-            }
-        }, 40);
+        navigationBaritems.style.left = `${0}px`;  
         buttonbarright.style.display = "block";
     }
     else
@@ -118,20 +109,76 @@ buttonbarleft.addEventListener('click',async (e) => {
     e.stopPropagation();
     if(Item[Item.length-1].getBoundingClientRect().x >980){
         buttonbarright.style.display = "none";
-        let i=47
-        let settime =  await setInterval(() => {
-            i-=50
-            navigationBaritems.style.left = `${i}px`;
-            if(i<=-985)
-            {
-                navigationBaritems.style.left = `${-985}px`;
-                clearInterval(settime);
-            }
-        }, 40);
+        navigationBaritems.style.left = `${-985}px`;  
         buttonbarleft.style.display = "block";
     }
     else
     {
         buttonbarleft.style.display = "block";
     }
+})
+
+var arrayListdeals =document.querySelectorAll(".deal-qty")
+arrayListdeals.forEach(element => {
+    let random = Math.random() * (100 - 10)+ 10 ;
+    element.children[0].children[0].style.width=`${random}%`
+    if(random == 10)
+    {
+        element.children[0].children[1].innerHTML= "Vừa mở bán"
+    }
+    else
+    {   
+        if(random > 90)
+        {
+            element.children[0].children[1].innerHTML= "Sắp hết hàng"
+        }
+        else
+        {
+            element.children[0].children[1].innerHTML= "đã bán "+Math.floor(random)
+        }
+    }
+    if(random >30)
+    {
+        let fire = document.createElement("img");
+        fire.src = "https://frontend.tikicdn.com/_desktop-next/static/img/fire_icon.svg";
+        fire.style.width = "28px";
+        fire.style.height = "28px";
+        fire.style.position = "absolute";
+        fire.style.top = "-10px";
+        fire.style.left = "5px";
+        fire.style.zIndex = "5";
+        element.appendChild(fire);
+    }
+}
+)
+var x = setInterval(function() {
+  var now = new Date();
+  var hours = 23- now.getHours();
+  var minutes = 59- now.getMinutes();
+  var seconds = 59- now.getSeconds();
+  document.querySelector(".Hour").innerHTML =  hours < 10 ? "0" + hours : hours;
+  document.querySelector(".Minute").innerHTML =  minutes <10? "0"+minutes : minutes
+  document.querySelector(".Second").innerHTML =  seconds <10?`0${seconds}`:seconds  // If the count down is finished, write some text
+}, 1000);
+if(document.querySelectorAll(".deals__item")[0].getBoundingClientRect().x==340)
+{
+    document.querySelector(".prev").style.display = "none";
+}
+if(document.querySelectorAll(".deals__item")[11].getBoundingClientRect().x==1375)
+{
+    document.querySelector(".next").style.display = "none";
+}
+document.querySelector(".next").addEventListener('click',(e)=>{
+            e.stopPropagation();
+            document.querySelector(".body__container").style.marginLeft = `-1240px`;
+            document.querySelector(".next").style.display = "none";
+            document.querySelector(".prev").style.display = "block";
+
+})
+document.querySelector(".prev").addEventListener('click',(e)=>{
+    e.stopPropagation();
+    document.querySelector(".body__container").style.marginLeft = `0px`;
+    document.querySelector(".next").style.display = "block";
+    document.querySelector(".prev").style.display = "none";
+   
 })
