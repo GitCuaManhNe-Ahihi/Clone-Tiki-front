@@ -30,7 +30,7 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  position: fixed;
+  position: relative;
   z-index: 1000;
   top: 0;
   left: 0;
@@ -599,7 +599,7 @@ html {
 .navigationBar {
   position: relative;
   width: 100vw;
-  top: 100px;
+  top: 0;
   left: 0;
   background: #fff;
   height: 4.4rem;
@@ -689,8 +689,9 @@ html {
 
 .section-slide {
   position: relative;
-  top: 100px;
+  top: 0;
   width: 100vw;
+  padding: 2rem 0;
   background: #efefef;
 }
 
@@ -770,6 +771,11 @@ html {
   border-radius: 5px 0 0 5px;
 }
 
+.swiper-button-next:hover {
+  background: #202020;
+  color: #fff;
+}
+
 .swiper-button-next::after {
   display: none;
 }
@@ -778,7 +784,247 @@ html {
   font-size: 20px;
 }
 
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background: #202020;
+  color: #fff !important;
+}
+
 .swiper-pagination-bullet-active {
   background: #fff !important;
+}
+
+.HomeContainerDeals {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 342px;
+  background: #efefef;
+}
+
+.HomeContainerDeals .ContainerDeals {
+  width: 1240px;
+  height: 100%;
+  margin: auto;
+  background: #fff;
+  position: relative;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__heading {
+  padding: 16px;
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__heading .ContainerDeals__heading-letf #flash {
+  opacity: 0;
+  display: inline-block;
+  -webkit-animation: fade 0.5s linear 0.2s infinite;
+          animation: fade 0.5s linear 0.2s infinite;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__heading .ContainerDeals__heading-right .Countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__heading .ContainerDeals__heading-right .Countdown .fa-chevron-right {
+  font-size: 17px;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__heading .ContainerDeals__heading-right .Countdown span {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 1.5rem;
+  padding: .2rem .5rem;
+  min-width: 2rem;
+  border-radius: .2rem;
+  background: #e03434;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__heading .ContainerDeals__heading-right .Countdown .Hour::after, .HomeContainerDeals .ContainerDeals .ContainerDeals__heading .ContainerDeals__heading-right .Countdown .Minute::after {
+  content: ':';
+  display: inline-block;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  border-radius: 50%;
+  color: #000;
+  margin: 0 0.5rem;
+  position: absolute;
+  top: 50%;
+  right: -1.6rem;
+  font-size: 3rem;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body {
+  width: 1240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body .body__container {
+  width: 2480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body .body__container .deals__item {
+  width: 207px;
+  height: 267px;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body .body__container .deals__item:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body .body__container .deals__item p {
+  height: 24px;
+  margin: 8px 0;
+  width: 100%;
+  line-height: 24px;
+  color: #ff4c57;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body .body__container .deals__item p span {
+  font-size: 1.3rem;
+  font-weight: normal;
+  padding: .1rem;
+  border: .5px solid #fa6872;
+  border-radius: 2px;
+  margin-left: 1rem;
+  background: #f09ba14f;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body .body__container .deals__item .deal-qty {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body .body__container .deals__item .deal-qty .deal-progess {
+  width: 100%;
+  height: 20px;
+  background: #ec78809d;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body .body__container .deals__item .deal-qty .deal-progess span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.HomeContainerDeals .ContainerDeals .ContainerDeals__body .body__container .deals__item .deal-qty .deal-progess .deal-progess__bar {
+  width: 90%;
+  border-radius: 30px;
+  position: absolute;
+  height: 100%;
+  background: #ff4c57;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.HomeContainerDeals .ContainerDeals .prev,
+.HomeContainerDeals .ContainerDeals .next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 32px;
+  height: 56px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 4;
+}
+
+.HomeContainerDeals .ContainerDeals .prev {
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
 }
 /*# sourceMappingURL=main.css.map */
