@@ -19,6 +19,12 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
   padding: 0;
+}
+
+body {
+  background: #efefef;
 }
 /*# sourceMappingURL=base.css.map */

@@ -9,10 +9,15 @@ html{
     transition: all linear 0.75s;
     user-select: none;
 }
+    
 *{
     box-sizing: border-box;
     margin: 0;
+    transition: all linear 0.25s;
     padding: 0;
+}
+body{
+    background: #efefef;
 }
 @mixin animate($animation,$duration,$method,$times){
     animation: $animation $duration $method $times infinite;
@@ -21,4 +26,11 @@ html{
     @keyframes #{$name}{
         @content;
     }
+}
+@mixin base($marginTb,$marginLR,$height){
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: $marginTb $marginLR;
+    height: $height;
 }
