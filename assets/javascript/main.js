@@ -160,7 +160,8 @@ var x = setInterval(function() {
   document.querySelector(".Minute").innerHTML =  minutes <10? "0"+minutes : minutes
   document.querySelector(".Second").innerHTML =  seconds <10?`0${seconds}`:seconds  // If the count down is finished, write some text
 }, 1000);
-if(document.querySelectorAll(".deals__item")[0].getBoundingClientRect().x==340)
+
+if(document.querySelectorAll(".deals__item")[0].getBoundingClientRect().x<=340)
 {
     document.querySelector(".prev").style.display = "none";
 }
